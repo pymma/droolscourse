@@ -1,0 +1,40 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.kie:kie-maven-plugin
+    versions:
+    - 7.48.0.Final
+    - 7.49.0.Final
+    - 7.50.0.Final
+    - 7.51.0.Final
+    - 7.52.0.Final
+  - dependency-name: org.kie:kie-api
+    versions:
+    - 7.48.0.Final
+    - 7.49.0.Final
+    - 7.50.0.Final
+    - 7.51.0.Final
+    - 7.52.0.Final
+  - dependency-name: org.jbpm:jbpm-bpmn2
+    versions:
+    - 7.48.0.Final
+    - 7.49.0.Final
+    - 7.50.0.Final
+    - 7.51.0.Final
+    - 7.52.0.Final
+  - dependency-name: org.drools:drools-compiler
+    versions:
+    - 7.48.0.Final
+    - 7.49.0.Final
+    - 7.50.0.Final
+    - 7.51.0.Final
+    - 7.52.0.Final
+  - dependency-name: joda-time:joda-time
+    versions:
+    - 2.10.9
